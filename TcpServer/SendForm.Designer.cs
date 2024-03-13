@@ -43,19 +43,20 @@
             this.pnlWorkingSpace.Controls.Add(this.cbbMode);
             this.pnlWorkingSpace.Controls.Add(this.labError);
             this.pnlWorkingSpace.Controls.Add(this.labMessage);
-            this.pnlWorkingSpace.Size = new System.Drawing.Size(443, 166);
+            this.pnlWorkingSpace.Size = new System.Drawing.Size(332, 135);
             // 
             // pnlControlSpace
             // 
-            this.pnlControlSpace.Location = new System.Drawing.Point(0, 166);
-            this.pnlControlSpace.Size = new System.Drawing.Size(443, 42);
+            this.pnlControlSpace.Location = new System.Drawing.Point(0, 135);
+            this.pnlControlSpace.Size = new System.Drawing.Size(332, 34);
             // 
             // labMessage
             // 
             this.labMessage.AutoSize = true;
-            this.labMessage.Location = new System.Drawing.Point(9, 20);
+            this.labMessage.Location = new System.Drawing.Point(7, 16);
+            this.labMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labMessage.Name = "labMessage";
-            this.labMessage.Size = new System.Drawing.Size(106, 17);
+            this.labMessage.Size = new System.Drawing.Size(81, 13);
             this.labMessage.TabIndex = 0;
             this.labMessage.Text = "Send to 0 client";
             // 
@@ -65,23 +66,28 @@
             this.cbbMode.FormattingEnabled = true;
             this.cbbMode.Items.AddRange(new object[] {
             "Once",
+            "Every 100 msecs",
+            "Every 200 msecs",
+            "Every 500 msecs",
             "Every 1 sec",
             "Every 2 secs",
             "Every 3 secs",
             "Every 4 secs",
             "Every 5 secs",
             "Every 10 secs"});
-            this.cbbMode.Location = new System.Drawing.Point(12, 56);
+            this.cbbMode.Location = new System.Drawing.Point(9, 46);
+            this.cbbMode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbbMode.Name = "cbbMode";
-            this.cbbMode.Size = new System.Drawing.Size(132, 24);
+            this.cbbMode.Size = new System.Drawing.Size(100, 21);
             this.cbbMode.TabIndex = 2;
             // 
             // labError
             // 
             this.labError.ForeColor = System.Drawing.Color.Red;
-            this.labError.Location = new System.Drawing.Point(9, 94);
+            this.labError.Location = new System.Drawing.Point(7, 76);
+            this.labError.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labError.Name = "labError";
-            this.labError.Size = new System.Drawing.Size(425, 70);
+            this.labError.Size = new System.Drawing.Size(319, 57);
             this.labError.TabIndex = 0;
             this.labError.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
@@ -94,16 +100,17 @@
             this.txtContent.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtContent.HexOnly = false;
-            this.txtContent.Location = new System.Drawing.Point(150, 58);
+            this.txtContent.Location = new System.Drawing.Point(112, 47);
+            this.txtContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(281, 22);
+            this.txtContent.Size = new System.Drawing.Size(212, 20);
             this.txtContent.TabIndex = 3;
             // 
             // SendForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 208);
+            this.ClientSize = new System.Drawing.Size(332, 169);
             this.Name = "SendForm";
             this.Text = "Send";
             this.pnlWorkingSpace.ResumeLayout(false);
